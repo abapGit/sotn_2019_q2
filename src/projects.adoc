@@ -1,0 +1,8 @@
+== Related Community Projects
+
+* https://github.com/larshp/abap-transmogrify
+* https://github.com/larshp/abaplint
+* https://github.com/flaiker/ci-lib
+* https://github.com/marcellourbani/abap-adt-api
+* https://github.com/marcellourbani/vscode_abap_remote_fs
+* https://github.com/abapGit/abap_git_hosts_apis

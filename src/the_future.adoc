@@ -1,0 +1,9 @@
+== The Future
+
+* More ADT
+* Local editing
+* Requirements
+* Translations
+* Increase CI coverage
+
+processes around using git in ABAP environments

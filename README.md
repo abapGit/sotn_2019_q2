@@ -1,4 +1,20 @@
-# the_world
-ABAP / Git / Everything
+# abapGit: State of the Nation 2019 Q2
 
-Use vscode
+[PDF](https://abapgit.github.io/sotn_2019_q2/abapgit_2019_q2.pdf)
+
+## Editing
+Recommend using [vscode](https://code.visualstudio.com/) for editing
+
+## Compiling
+Prerequsites,
+
+```
+gem install asciidoctor-pdf
+gem install asciidoctor-diagram
+gem install rouge
+```
+
+Compiling,
+```
+asciidoctor-pdf -r asciidoctor-diagram -D build -a imagesdir=../build src/index.adoc
+```

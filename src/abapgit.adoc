@@ -1,0 +1,18 @@
+== abapGit
+
+=== Features
+todo
+object types
+customizing
+all is downported, easy upgrade
+developer focused
+
+=== Support
+todo
+https://docs.abapgit.org/other-where-used.html
+
+=== Community
+todo
+Code Exchange closed in 2013
+https://dotabap.org
+https://wiki.scn.sap.com/wiki/display/events/abapGit+BunKai
