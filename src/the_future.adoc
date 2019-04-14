@@ -1,7 +1,7 @@
 == The Future
 
 * More ADT
-* Local editing
+* Local editing and runtime
 * Requirements
 * Translations
 * Increase CI coverage

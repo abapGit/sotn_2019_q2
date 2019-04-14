@@ -16,3 +16,24 @@ todo
 Code Exchange closed in 2013
 https://dotabap.org
 https://wiki.scn.sap.com/wiki/display/events/abapGit+BunKai
+
+=== Deployment
+todo
+recommend using CTS for deployment within landscape
+
+=== Git Hosting
+ABAP in files gives possibility to use modern processes in
+
+on-prem/cloud
+
+* GitHub
+* GitLab
+* Bitbucket
+* Azure DevOps
+* AWS CodeCommit
+* Assembla
+* abapGitServer
+
+=== Dependencies
+* APACK
+* Git Dependencies

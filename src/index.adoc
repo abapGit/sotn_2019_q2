@@ -9,14 +9,26 @@ Lars Hvam Petersen; Another?; One?; Rides?; The?; Bus?; Another?; One?; Rides?; 
 
 include::abstract.adoc[]
 
+<<<
+
 include::abapgit.adoc[]
+
+<<<
 
 include::projects.adoc[]
 
+<<<
+
 include::continuous_integration.adoc[]
+
+<<<
 
 include::continuous_delivery.adoc[]
 
+<<<
+
 include::end_to_end.adoc[]
+
+<<<
 
 include::the_future.adoc[]

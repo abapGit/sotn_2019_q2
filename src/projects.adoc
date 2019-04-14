@@ -1,8 +1,21 @@
 == Related Community Projects
+Multiple community projects provides extra possibilities in the ABAP development workflow.
+This chapter lists a subset of the projects to watch in the future.
 
-* https://github.com/larshp/abap-transmogrify
-* https://github.com/larshp/abaplint
-* https://github.com/flaiker/ci-lib
-* https://github.com/marcellourbani/abap-adt-api
-* https://github.com/marcellourbani/vscode_abap_remote_fs
-* https://github.com/abapGit/abap_git_hosts_apis
+include::projects/ci-lib.adoc[]
+
+include::projects/abap-adt-api.adoc[]
+
+include::projects/vscode_abap_remote_fs.adoc[]
+
+include::projects/abap_git_hosts_apis.adoc[]
+
+include::projects/abapCI.adoc[]
+
+include::projects/sapcli.adoc[]
+
+include::projects/transmogrify.adoc[]
+
+include::projects/abaplint.adoc[]
+
+include::projects/abapGitServer.adoc[]
