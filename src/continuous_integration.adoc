@@ -1,9 +1,13 @@
 == Continuous Integration
-Process for providing feedback to the developer regarding recent commits
+Continuous integration is the process for providing feedback to the developer regarding recent changes.
 
-parallel
+In a git context the developer will do a commit or open a https://help.github.com/en/articles/about-pull-requests[pull request] and automatically be informed about the code. Typically this consists of compiling the code, static analysis, and running unit tests.
 
-For every pull request,
+Note that the developer is only interested in feedback about the current changes, so information should be restricted to the current changes, not other changes ongoing in the same system(if any).
 
-* Run unit tests in isolated manner
-* Static analysis
+In git the developer will have a branch containing the changes, this branch is deployed to a isolated system, which runs the toolchain. This can be a ABAP application server running as a container, for each unit of work a system is spawned, code deployed, syntax check, code inspector, and unit tests are run.
+
+However it might be difficult to spawn a ABAP system for each commit, so developers might be forced to use the same ABAP system for continuous integration, but note that this might give wrong information to the developer. Also note that development happens in parallel, so continuous integration should also run in parallel to ensure fast feedback.
+
+abapGit is a community project and thus does not own any licences for running ABAP servers connected to processes on the internet, so it is not possible to run continuous integration using ABAP application servers for abapGit.
+Instead abapGit uses https://github.com/larshp/abaplint[abaplint] to perform limited static analysis and provide feedback for eg. naming and downport problems.

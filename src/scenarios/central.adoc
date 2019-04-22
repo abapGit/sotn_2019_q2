@@ -1,0 +1,80 @@
+:plantuml-server-url: https://www.plantuml.com/plantuml
+
+=== Three Tier Central
+
+* All developers on one central ABAP system
+* Dev, QA, Production landscape
+* Continuous delivery to production
+* Cherry picking features
+* Each transport is a feature is a branch
+* Leverage modern development tooling/processes
+* Let ABAP developers work with normal tools
+
+==== Setup
+
+In a simple 3 tier system setup, testing is done by business in the quality assurance system after the developer has released the transport. The transport is moved to production after business users have accepted the test.
+
+[plantuml]
+....
+left to right direction
+skinparam monochrome true
+node Development
+node Quality
+node Production
+Development --> Quality
+Quality --> Production
+....
+
+Assumption: The ideal world is a continuous delivery setup, where features are moved to production as early as possible. I.e. no predefined release and testing cycles.
+
+Assumption: The number of quality assurance systems in the landscape is much lower than the number of features being implemented. It would be nice to spawn one quality system per feature, but this is not feasible due to cost and integration to other systems in the landscape.
+
+Risk is increased as multiple features are tested in the same system. Some of this risk can be mitigated using static analysis and continuous integration.
+
+==== Git Branching Strategy
+
+Every transport corresponds to a feature which corresponds to a branch.
+
+Every tier in the landscape has a corresponding branch, which at any given time contains a snapshot of the code in that system.
+
+[plantuml]
+....
+left to right direction
+skinparam monochrome true
+node Development [
+  Development
+  Branch: dev
+]
+node Quality [
+  Quality
+  Branch: qa
+]
+node Production [
+  Production
+  Branch: prod
+]
+Development --> Quality
+Quality --> Production
+....
+
+The developer opens a transport and implements the required changes.
+abapGit runs in https://github.com/abapGit/background_modes[background] and automatically creates a branch for each transport and commits the latest code at regular intervals.
+
+====
+OPTION: Let the developers open branches and do commits manually.
+====
+
+====
+OPTION: Decentral development
+====
+
+Once the PR is approved, a transport of copies is released from development and imported to quality system.
+
+When business approves the feature, transport is released from development and imported to quality + production, plus feature merged to the `prod` branch.
+
+=== Mitigating Risk
+todo
+
+CI
+
+Static analysis

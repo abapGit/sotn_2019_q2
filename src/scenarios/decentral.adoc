@@ -1,0 +1,36 @@
+:plantuml-server-url: https://www.plantuml.com/plantuml
+
+=== Decentral Development
+
+* Every developer will have their own local development system
+* Few requirements to other repositories/custom objects(optional)
+* Organized package structure consisting of multiple repositories(optional)
+
+https://searchsap.techtarget.com/tip/Implementing-modern-practices-in-an-ABAP-development-shop
+
+todo
+
+[plantuml]
+....
+left to right direction
+skinparam monochrome true
+node "Development 1" as dev1
+node "Development 2" as dev2
+node "QA?" as qa
+node "Production" as prod
+database git
+collections ci
+actor Alice
+actor Bob
+Alice --> dev2
+Bob --> dev1
+dev1 --> git : commit
+dev2 --> git : commit
+git -up-> ci : trigger
+git --> qa : abapGit
+qa --> prod : CTS
+....
+
+Both developers use git on their systems and do commits/branching, code is committed to a git repository which triggers CI.
+
+? todo, then central QA system ?

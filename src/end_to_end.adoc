@@ -1,103 +1,14 @@
-:plantuml-server-url: https://www.plantuml.com/plantuml
-
 == End to End Workflow
 This chapter describes different options for a modern and feasible end-to-end ABAP development setup.
 
-todo, There are different requirements and responsibilities in organizations and workflows
+todo, There are different requirements and responsibilities in organizations and workflows.
 
-=== Scenario A - Decentral Development
-todo
-Link Ethan's article
+Inspiration, combinations of scenarios possible.
 
-=== Scenario B - Product Development
-todo
+include::scenarios/decentral.adoc[]
 
-=== Scenario C - 3 Tier Central
-todo
+include::scenarios/product.adoc[]
 
-==== Assumptions
+include::scenarios/central.adoc[]
 
-*It is possible to store ABAP artifacts as files*
-
-Developer focused
-Changing one object should only affect its objects(currently a problem in abapGit)
-
-*Git will be used to store ABAP artifacts*
-
-foo
-
-==== Cherry picking feature branches
-
-In a simple 3 tier system setup, testing is done by business in the quality assurance system after the developer has released the transport. The transport is moved to production after business users have accepted the test.
-
-[plantuml]
-....
-node Development
-node Quality
-node Production
-Production <-- Quality
-Quality <-- Development
-....
-
-Assumption: The ideal world is a continuous delivery setup, where features are moved to production as early as possible. I.e. no predefined release and testing cycles.
-
-Assumption: The number of quality assurance systems in the landscape is much lower than the number of features being implemented. It would be nice to spawn one quality system per feature, but this is not feasible due to cost and integration to other systems in the landscape.
-
-Risk is increased as multiple features are tested in the same system. Some of this risk can be mitigated using static analysis and continuous integration.
-
-==== Git Branching Strategy
-
-Every transport corresponds to a feature which corresponds to a branch.
-
-Every tier in the landscape has a corresponding branch,
-
-[plantuml]
-....
-node Development [
-  Development
-  Branch: dev
-]
-node Quality [
-  Quality
-  Branch: qa
-]
-node Production [
-  Production
-  Branch: prod
-]
-Production <-- Quality
-Quality <-- Development
-....
-
-The developer opens a pull/merge request to the `qa` branch with the new feature.
-
-====
-OPTION: Central or decentralized development. For central development the upcoming abapGit feature "transport to branch" can be used.
-====
-
-[plantuml]
-....
-node Development [
-  Development
-  Branch: dev
-]
-node Quality [
-  Quality
-  Branch: qa
-]
-node Production [
-  Production
-  Branch: prod
-]
-usecase feature
-Production <-- Quality
-Quality <-- Development
-feature .. Quality : PR
-....
-
-Once the PR is approved(manual review, unit test, static analysis), the transport is released from development and imported to quality system. When business approves the feature, transport is imported to production, plus feature merged to the `prod` branch.
-
-If additional fixes for the feature is needed, then ???
-
-=== Scenario D - With Maintenance Branch
-todo
+include::scenarios/maintenance.adoc[]

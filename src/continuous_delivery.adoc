@@ -1,6 +1,4 @@
 == Continuous Delivery
-todo
+Continuous delivery extends on continuous integration by automating the process of deployment of the code to the landscape.
 
-* Cherry picking feature branches
-* Static analysis, no incompatible sequence of transports/features
-* Static analysis, risk/impact analysis
+hmm?

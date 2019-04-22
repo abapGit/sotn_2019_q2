@@ -1,0 +1,20 @@
+:plantuml-server-url: https://www.plantuml.com/plantuml
+
+=== With Maintenance Branch
+
+* An extra system is added to the landscape for hotfixes to production
+* Few hotfixes are required and development effort for these is low
+* Maintenance reflects the production system except for ongoing hotfixes
+
+[plantuml]
+....
+left to right direction
+skinparam monochrome true
+node Development
+node Quality
+node Production
+node Maintenance
+Development --> Quality
+Quality --> Production
+Maintenance --> Production
+....

@@ -1,0 +1,11 @@
+:plantuml-server-url: https://www.plantuml.com/plantuml
+
+=== Product Development
+
+* Release cycles
+* Central authority for selecting features
+* Production system not critical for business operations
+
+todo
+
+tag releases
