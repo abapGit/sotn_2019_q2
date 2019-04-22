@@ -1,3 +1,17 @@
 [preface]
 == Abstract
 abapGit has been around for some years, this document describes where it has been and where it is possibly going. The development of abapGit is community driven, so no promises are made with this document, nor does it necessarily reflect the opinions of all authors and their employers.
+
+Feedback and fixes for this document welcome at https://github.com/abapGit/sotn_2019_q2
+
+[preface]
+== Revision History
+
+[options="header",cols="1,5"]
+|===
+| Date | Description
+| foo | todo
+| bar | todo
+|===
+
+For full history see https://github.com/abapGit/sotn_2019_q2

@@ -9,6 +9,7 @@
 * Stash?
 * REST API
 * Increase CI coverage
+* Dependencies= APACK + Git Dependencies
 
 More examples around using git in ABAP environments
 

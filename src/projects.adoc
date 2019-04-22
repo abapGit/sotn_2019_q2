@@ -1,10 +1,12 @@
-== Related Community Projects
+== Community Projects
 Multiple community projects provides extra possibilities in the ABAP development workflow.
 This chapter lists a subset of the projects to watch in the future.
 
 include::projects/ci-lib.adoc[]
 
 include::projects/abap-adt-api.adoc[]
+
+include::projects/abap-doc-export.adoc[]
 
 include::projects/vscode_abap_remote_fs.adoc[]
 

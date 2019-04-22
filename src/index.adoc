@@ -19,6 +19,10 @@ include::projects.adoc[]
 
 <<<
 
+include::notes.adoc[]
+
+<<<
+
 include::continuous_integration.adoc[]
 
 <<<

@@ -1,0 +1,16 @@
+== Notes
+todo, move chapter? rename chapter?
+
+=== Branching
+todo
+in the abap world more branches = more systems
+
+=== File Format
+todo
+
+=== Deployment
+todo
+recommend using CTS for deployment within landscape
+
+=== Testing
+todo
