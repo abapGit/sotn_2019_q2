@@ -1,14 +1,18 @@
 :plantuml-server-url: https://www.plantuml.com/plantuml
 
 == End to End Workflow
-moo
-Branching = more systems
+This chapter describes different options for a modern and feasible end-to-end ABAP development setup.
+
+todo, There are different requirements and responsibilities in organizations and workflows
 
 === Scenario A - Decentral Development
 todo
 Link Ethan's article
 
-=== Scenario B - 3 Tier Central
+=== Scenario B - Product Development
+todo
+
+=== Scenario C - 3 Tier Central
 todo
 
 ==== Assumptions
@@ -95,5 +99,5 @@ Once the PR is approved(manual review, unit test, static analysis), the transpor
 
 If additional fixes for the feature is needed, then ???
 
-=== Scenario C - With Maintenance Branch
+=== Scenario D - With Maintenance Branch
 todo

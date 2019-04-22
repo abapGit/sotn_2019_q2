@@ -14,4 +14,8 @@
 More examples around using git in ABAP environments
 
 === ABAP Development
-sdf
+more editor options(vscode, language server)
+
+local development
+
+cross compiling
