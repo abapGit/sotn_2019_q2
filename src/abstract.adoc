@@ -1,5 +1,3 @@
 [preface]
 == Abstract
-something something
-
-no commitment, and does not necessarily reflect the opinion of employers
+abapGit has been around for some years, this document describes where it has been and where it is possibly going. The development of abapGit is community driven, so no promises are made with this document, nor does it necessarily reflect the opinions of all authors and their employers.

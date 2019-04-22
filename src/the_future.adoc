@@ -1,9 +1,16 @@
 == The Future
 
-* More ADT
+=== abapGit
+
+* ADT
 * Local editing and runtime
 * Requirements
 * Translations
+* Stash?
+* REST API
 * Increase CI coverage
 
-processes around using git in ABAP environments
+More examples around using git in ABAP environments
+
+=== ABAP Development
+sdf
