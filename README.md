@@ -9,7 +9,7 @@ Recommend using [vscode](https://code.visualstudio.com/) for editing
 Prerequsites,
 
 ```
-gem install asciidoctor-pdf
+gem install asciidoctor-pdf --pre
 gem install asciidoctor-diagram
 gem install rouge
 ```
