@@ -3,4 +3,16 @@
 https://github.com/jfilak/sapcli
 
 ==== Description
-todo
+
+Leverages ADT HTTP API to allow executing ABAP development operations without
+human interaction in order to enable high level of scripting and integration
+with tools like Jenkins, Jira, or GitHub.
+
+Use case examples::
+  * Triggering quality checks (ABAP Unit, ATC) from CI tools
+  * Automating CTS operations (e.g. releasing transports after GitHub review)
+  * Deploying ABAP Objects from git repositories created by abapGit
+
+Inspired by OpenStackClient, AWS CLI, Azure CLI, Kubectl, Cloud Foundry CLI and
+many other command line tools used by IT professionals to automate their tasks
+and work efficiently from command line.
