@@ -18,3 +18,8 @@ Compiling,
 ```
 asciidoctor-pdf -r asciidoctor-diagram -D build -a imagesdir=../build src/index.adoc
 ```
+
+Or you can make use of docker,
+```bash
+sudo docker run --rm -v $(pwd):/sotn -w /sotn asciidoctor/docker-asciidoctor bash ./action/entrypoint.sh
+```
